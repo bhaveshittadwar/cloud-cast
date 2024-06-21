@@ -14,6 +14,10 @@ mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("Connected to MongoDB"))
     .catch((err) => console.log(err))
 
+app.get('/test', (req, res) => res.json({
+    message: "Testing Server"
+}))
+
 app.use(express.static("./client/build"))
 app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "client", "build", "index.html")))
 
