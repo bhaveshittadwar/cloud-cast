@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "build": "cd client && npm install && npm run build && rm -fr node_modules",
-    "test": "Under construction"
+    "build": "cd client && npm install && npm run build && rm -fr node_modules"
   },
   "keywords": [],
   "author": "",
